@@ -1,5 +1,5 @@
 pipeline {
-    agent any
+    agent { label 'built-in' }
 
     environment {
         IMAGE_NAME = 'vmalge/go-multistage'
